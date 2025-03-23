@@ -11,6 +11,7 @@ import { auth } from "./firebaseConfig";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
+import ForgotPassword from "./components/ForgotPassword";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         {/* Si hay sesión, se muestra el dashboard; si no, se muestra login */}
         <Route path="/" element={user ? <Dashboard /> : <Login />} />
         <Route

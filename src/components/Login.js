@@ -78,6 +78,9 @@ const Login = () => {
             margin="normal"
             required
           />
+          <p>
+            <a href="/forgot-password">Forgot your password?</a>
+          </p>
           <Button
             type="submit"
             variant="contained"
